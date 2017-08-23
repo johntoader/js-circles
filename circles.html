@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS challenge - Circles</title>
+    <link rel="stylesheet" type="text/css" href="jsstyle.css">
+</head>
+
+<body>
+
+    <div id="redCircle"></div>
+    <button id="redVanish">Vanish Red</button>
+    <div id="blueCircle"></div>
+    <button id="blueVanish">Vanish Blue</button>
+    <div id="greenCircle"></div>
+    <button id="greenVanish">Vanish Green</button>
+
+
+
+
+    <script type="text/javascript">
+        /*using buttons*/
+        document.getElementById("redVanish").onclick = function() {
+            document.getElementById("redCircle").style.display = ("none");
+        }
+
+        document.getElementById("blueVanish").onclick = function() {
+            document.getElementById("blueCircle").style.display = ("none");
+        }
+
+        document.getElementById("greenVanish").onclick = function() {
+            document.getElementById("greenCircle").style.display = ("none");
+        }
+
+        /*using onclick only*/
+        document.getElementById("redCircle").onclick = function() {
+            document.getElementById("redCircle").style.display = ("none");
+        }
+        document.getElementById("blueCircle").onclick = function() {
+            document.getElementById("blueCircle").style.display = ("none");
+        }
+        document.getElementById("greenCircle").onclick = function() {
+            document.getElementById("greenCircle").style.display = ("none");
+        }
+    </script>
+</body>
+</html>
